@@ -40,7 +40,7 @@ button:hover {
 
 .links{
     display: inline-block;
-    padding: 0px 30px;
+    padding: 0px 20px;
 }
 
  li,a {
@@ -55,5 +55,29 @@ button:hover {
 }
 nav li {
     border-right: 1px solid #000;
+}
+
+@media (max-width: 978px) {
+    button {
+            border-color: #f7efef;
+            outline: none;
+            border: none;
+            transition: all 0.3 ease 0s;
+            padding: 10px;
+            font-family: Georgia;
+            font-size: 1em;
+            font-weight: 800;
+            color: black;
+            line-height: 1em;
+            text-transform: uppercase
+        }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+         margin-right: auto;
+    }  
+
 }
 
