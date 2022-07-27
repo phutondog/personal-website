@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+    background-color: white;
+    -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 50px;
+}
+
+.navbar {
+    display: flex;
+    // justify-content: flex-end;
+    align-items: center;
+    padding: 0px 2.5%;
+}
+
+button {
+    border-color: #f7efef;
+    outline: none;
+    border: none;
+    transition: all 0.3 ease 0s;
+    padding: 25px;
+        font-family: 'Palatino';
+            font-size: 1em;
+            font-weight: 500;
+            color: black;
+            line-height: 1em;
+            text-transform: uppercase;
+}
+
+button:hover {
+    color: darkslategrey;
+}
+
+.a{
+    width: 100%;  
+}
+
+.b{
+    border: .5px solid black;
+}
+
+li {
+    list-style: none;
+}
+
+.border-md-right {
+    border-right: 1px solid silver;
+}
+
+@media (max-width: 768px) {
+
+    .border-md-right {
+        border-right: none;
+    }
+
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+// .col li:not(:last-child){
+//     border: 1px solid #000;
+
+// }
+
+.about{
+    border-radius: 1px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0px .5px solid black;
+    border-bottom-right-radius: 0px .5px solid black;
+    border-right: .5px solid black;;
+}
+
+.projects{
+    border-radius: 1px;
+    border-top-right-radius: 0px .5px solid black;
+    border-bottom-right-radius: 0px .5px solid black;
+    border-right: .5px solid black;
+
+}
