@@ -29,14 +29,31 @@ h1{
         font-weight: 800;
         color:black;
         line-height: 1em;
-        text-transform: uppercase
+        text-transform: uppercase;
+        animation: fadeInAnimation ease 5s forwards;
+        animation-delay: 1s;
+        opacity: 0;
 }
 h2 {
     font-size: 2em;
     font-weight: 600;
     color: black;
     line-height: 1em;
-    text-transform: uppercase
+    opacity: 0;
+    text-transform: uppercase;
+    animation: fadeInAnimation ease forwards;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 978px) {
@@ -63,9 +80,6 @@ h2 {
 
 }
 
-
-
-
 .bars{
     width: 0px;
 }
@@ -86,3 +100,9 @@ h2 {
     min-width: 400px;
 }
 
+app-landing-nav, .bottom {
+    opacity: 0;
+    animation: fadeInAnimation ease forwards;
+    animation-duration: 2s;
+    animation-delay: 3s;
+}

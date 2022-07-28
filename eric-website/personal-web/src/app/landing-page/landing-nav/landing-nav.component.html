@@ -1,39 +1,18 @@
 
 <div class="a container mx-auto">
-<ol>
     <div class="b container mx-auto shadow-lg mb-5 bg-white">
         <div class="row grid-divider">
-
-            <nav class="links d-flex justify-content-evenly">
-
-                <div class="col about">
-                <li>
-                    <div class="d-flex justify-content-center">
-                        
-                        <button class="mx-auto">About</button>
-                    </div>
+            <ul class="nav nav-pills nav-fill" (click)="onButtonGroupClick($event)">
+                <li class="nav-item">
+                    <button class="nav-link about bar active" aria-current="page" href="#">About</button>
                 </li>
-                </div>
-            
-                
-                <div class="col projects">
-                    <li>
-                    <div class="d-flex justify-content-center">
-                    <button class="mx-auto">Projects</button>
-                    </div>
-                    </li>
-                </div>
-                
-                <div class="col tech">
-                    <li>
-                    <div class="d-flex justify-content-center">
-                        <button class="mx-auto">Stack</button>
-                    </div>
-                    </li>
-                </div>
-                
-            </nav>
+                <li class="nav-item">
+                    <button class="nav-link projects bar active" href="#">Projects</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link stack bar active" href="#">Stack</button>
+                </li>
+            </ul>
         </div>
     </div>
-</ol>
 </div>

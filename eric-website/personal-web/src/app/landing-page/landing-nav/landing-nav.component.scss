@@ -5,7 +5,7 @@
     background-color: white;
     -webkit-border-radius: 0;
         -moz-border-radius: 0;
-        border-radius: 50px;
+        border-radius: 7.5px;
 }
 
 .navbar {
@@ -13,24 +13,25 @@
     // justify-content: flex-end;
     align-items: center;
     padding: 0px 2.5%;
+
+
 }
 
 button {
+    color:black;
     border-color: #f7efef;
     outline: none;
+    border-radius: 5px;
     border: none;
     transition: all 0.3 ease 0s;
     padding: 25px;
-        font-family: 'Palatino';
-            font-size: 1em;
-            font-weight: 500;
-            color: black;
-            line-height: 1em;
+    font-size: 20px;
+            font-weight: 750;
             text-transform: uppercase;
 }
 
 button:hover {
-    color: darkslategrey;
+    color: #9fafca;
 }
 
 .a{
@@ -55,6 +56,19 @@ li {
         border-right: none;
     }
 
+        button {
+            color: black;
+            border-color: #f7efef;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            transition: all 0.3 ease 0s;
+            padding: 12px;
+            font-size: 14px;
+            font-weight: 750;
+            text-transform: uppercase;
+        }
+
 }
 
 .col-centered {
@@ -62,24 +76,31 @@ li {
     margin: 0 auto;
 }
 
-// .col li:not(:last-child){
-//     border: 1px solid #000;
-
-// }
-
-.about{
-    border-radius: 1px;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    border-top-right-radius: 0px .5px solid black;
-    border-bottom-right-radius: 0px .5px solid black;
-    border-right: .5px solid black;;
+.about.bar.active {
+    background-color: #0e387a;
+    animation: clicked ease;
+    animation-duration: 1s;
 }
 
-.projects{
-    border-radius: 1px;
-    border-top-right-radius: 0px .5px solid black;
-    border-bottom-right-radius: 0px .5px solid black;
-    border-right: .5px solid black;
+.projects.bar.active {
+    background-color: #0e387a;
+    animation: clicked ease;
+    animation-duration: 1s;
+    
+}
 
+.stack.bar.active {
+    background-color: #0e387a;
+    animation: clicked ease;
+    animation-duration: 1s;
+}
+
+@keyframes clicked {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
