@@ -26,13 +26,13 @@ margin-top: auto;
 
 h1{
     font-size: 5em;
-        font-weight: 800;
-        color:black;
-        line-height: 1em;
-        text-transform: uppercase;
-        animation: fadeInAnimation ease 5s forwards;
-        animation-delay: 1s;
-        opacity: 0;
+    font-weight: 800;
+    color:black;
+    line-height: 1em;
+    text-transform: uppercase;
+    animation: fadeInAnimation ease 5s forwards;
+    animation-delay: 1s;
+    opacity: 0;
 }
 h2 {
     font-size: 2em;
@@ -62,21 +62,6 @@ h2 {
 //     width: 450px;
 
 // }
-h1 {
-    font-size: 3em;
-    font-weight: 800;
-    color: black;
-    line-height: 1em;
-    text-transform: uppercase
-}
-
-h2 {
-    font-size: 1em;
-    font-weight: 600;
-    color: black;
-    line-height: 1em;
-    text-transform: uppercase
-}
 
 }
 
@@ -106,3 +91,4 @@ app-landing-nav, .bottom {
     animation-duration: 2s;
     animation-delay: 3s;
 }
+
